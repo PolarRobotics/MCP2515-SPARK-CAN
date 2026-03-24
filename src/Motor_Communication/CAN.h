@@ -12,6 +12,8 @@
 
 extern MCP2515 mcp2515;
 extern MCP2515::ERROR err;
+
+// Array of Motor IDs for easy iteration 
 extern uint8_t motors[MOTOR_COUNT];
 
 // SPARK Packets
@@ -36,8 +38,7 @@ extern struct can_frame halt;
 #define halt_id 0x0000040
 #define halt_dlc 0
 
-// Data for CAN Packets
-uint8_t data[8*MOTOR_COUNT];
+// For defining endianness when packing floats into byte arrays
 enum endianness{little, big};
 
 // For GPIO Halt Pushbutton
