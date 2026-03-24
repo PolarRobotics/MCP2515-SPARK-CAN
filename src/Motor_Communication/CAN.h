@@ -40,7 +40,8 @@ extern struct can_frame halt;
 uint8_t data[8*MOTOR_COUNT];
 enum endianness{little, big};
 
-// For Halt Button
+// For GPIO Halt Pushbutton
+#define HALT_BUTTON 4
 extern unsigned long last_interrupt_time;
 extern const unsigned long DEBOUNCE_DELAY;
 extern bool halt_motors;

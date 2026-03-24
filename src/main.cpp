@@ -10,7 +10,6 @@
 #include <cstring>
 
 #define SPI_CS_PIN 5
-#define HALT_BUTTON 4
 
 /* Bluetooth Setup stuff*/
 // Prototypes for Controller Callbacks
